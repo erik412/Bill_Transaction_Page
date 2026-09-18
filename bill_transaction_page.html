@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <title>App Transactions</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <header>Test</header>
+    </div>
+    <div class="side-bar-container">
+      <a id="bill-entry" href="#" class="side-bar-links"> Enter New Bill </a>
+    </div>
+    <div class="bill-entry-container">
+      <div class="bill-entry-header">
+        <a id="close" href="#">X</a>
+        <h2>Enter New Bill</h2>
+      </div>
+      <div class="bill-entry-form">
+        <fieldset>
+          <label for="company"></label>Company
+          <input id="company" class="input-field" type="text" />
+          <label for="beginning-balance"
+            >Beginning Balance (Numbers & Decimal Only)</label
+          >
+          <input id="beginning-balance" class="input-field" type="text" />
+          <label for="due-date">Due Date (Day Only 1-31)</label
+          ><input id="due-date" class="input-field" type="text" />
+          <label for="payment-amount"
+            >Payment Amount (Numbers & Decimal Only)</label
+          ><input id="payment-amount" class="input-field" type="text" />
+          <div class="auto-pay">
+            <label for="auto-pay">Auto Pay</label
+            ><input id="auto-pay" class="auto-pay-checkbox" type="checkbox" />
+          </div>
+          <div class="btn-bill-submit" id="btn-bill-submit">
+            <button>Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <script src="transactions.js" defer></script>
+  </body>
+</html>
