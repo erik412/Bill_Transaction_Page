@@ -22,20 +22,27 @@
         <fieldset>
           <label for="company"></label>Company
           <input id="company" class="input-field" type="text" />
-          <label for="beginning-balance"
+          <label for="beg-balance"
             >Beginning Balance (Numbers & Decimal Only)</label
           >
-          <input id="beginning-balance" class="input-field" type="text" />
+          <input id="beg-balance" class="input-field" type="number" step="0.01" min="0""/>
           <label for="due-date">Due Date (Day Only 1-31)</label
-          ><input id="due-date" class="input-field" type="text" />
+          ><input
+            id="due-date"
+            class="input-field"
+            type="number"
+            min="1"
+            max="31"
+          />
+          <p id="due-date-error"></p>
           <label for="payment-amount"
             >Payment Amount (Numbers & Decimal Only)</label
-          ><input id="payment-amount" class="input-field" type="text" />
+          ><input id="payment-amt" class="input-field" type="number" step="0.01" min="0""/>
           <div class="auto-pay">
             <label for="auto-pay">Auto Pay</label
             ><input id="auto-pay" class="auto-pay-checkbox" type="checkbox" />
           </div>
-          <div class="btn-bill-submit" id="btn-bill-submit">
+          <div class="btn-bill-submit" id="btn-submit">
             <button>Submit</button>
           </div>
         </fieldset>
