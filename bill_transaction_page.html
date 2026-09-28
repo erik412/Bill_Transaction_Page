@@ -13,9 +13,9 @@
     <div class="side-bar-container">
       <a id="bill-entry" href="#" class="side-bar-links"> Enter New Bill </a>
     </div>
-    <div class="bill-entry-container">
+    <div id="bill-entry-container" class="bill-entry-container hidden">
       <div class="bill-entry-header">
-        <a id="close" href="#">X</a>
+        <a id="close-bill-entry" href="#">X</a>
         <h2>Enter New Bill</h2>
       </div>
       <div class="bill-entry-form">
@@ -25,7 +25,7 @@
           <label for="beg-balance"
             >Beginning Balance (Numbers & Decimal Only)</label
           >
-          <input id="beg-balance" class="input-field" type="number" step="0.01" min="0""/>
+          <input id="beg-balance" class="input-field" type="number" step="0.01" "/>
           <label for="due-date">Due Date (Day Only 1-31)</label
           ><input
             id="due-date"
@@ -37,7 +37,7 @@
           <p id="due-date-error"></p>
           <label for="payment-amount"
             >Payment Amount (Numbers & Decimal Only)</label
-          ><input id="payment-amt" class="input-field" type="number" step="0.01" min="0""/>
+          ><input id="payment-amt" class="input-field" type="number" step="0.01" "/>
           <div class="auto-pay">
             <label for="auto-pay">Auto Pay</label
             ><input id="auto-pay" class="auto-pay-checkbox" type="checkbox" />

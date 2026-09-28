@@ -27,7 +27,34 @@ function getBillData() {
   return billData;
 }
 
+function setVisibility(view) {
+  const billEntryContainer = document.getElementById('bill-entry-container');
+  if (view === 'open') {
+    billEntryContainer.classList.remove('hidden')
+  }
+  else {
+    billEntryContainer.classList.add('hidden');
+    }
+  }
+  
+
+
+
+const newBillLink = document.getElementById('bill-entry');
+const closeBillEntry = document.getElementById('close-bill-entry');
+newBillLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  console.log('Open link clicked.')
+  setVisibility('open');
+})
+closeBillEntry.addEventListener('click', function(event) {
+  event.preventDefault();
+  setVisibility('closed');
+})
+
+
 let btnSubmit = document.getElementById("btn-submit");
+
 
 btnSubmit.addEventListener("click", function () {
   const data = getBillData();
